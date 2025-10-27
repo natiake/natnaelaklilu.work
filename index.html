@@ -1,248 +1,524 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Natnael Aklilu — Computer Science Student</title>
-  <meta name="description" content="Natnael Aklilu — First-Year Computer Science student at Wolaita Sodo University. Learning. Building. Growing." />
-  <meta name="author" content="Natnael Aklilu" />
-  <meta name="theme-color" content="#0b0f12" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Natnael Aklilu — Computer Science Student" />
-  <meta property="og:description" content="Learning. Building. Growing. — First-year CS student at Wolaita Sodo University." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="natnaelaklilu.work" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (Free CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
-
-<!-- icon -->
-
-  <link rel="icon" href="logo.png">
-  
-  <!-- SEO canonical -->
-  <link rel="canonical" href="https://natnaelaklilu.work/">
-
-</head>
-<body>
-  <!-- Particle background canvas -->
-  <canvas id="hero-canvas" aria-hidden="true"></canvas>
-
-  <header class="site-header">
-    <nav class="nav">
-      <div class="brand">Natnael Aklilu</div>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="hero" class="hero section">
-      <div class="hero-inner container">
-        <div class="hero-left">
-          <h1 class="title">Natnael Aklilu <span class="muted">| Computer Science Student</span></h1>
-          <p class="subtitle"><span id="typing"></span></p>
-          <div class="hero-cta">
-            <button id="view-work" class="btn-primary">View My Work</button>
-            <a class="btn-ghost" href="#contact">Get in touch</a>
-          </div>
-
-          <ul class="learning-list" aria-hidden="true">
-            <li class="chip">HTML</li>
-            <li class="chip">CSS</li>
-            <li class="chip">C++</li>
-            <li class="chip">Problem Solving</li>
-          </ul>
-        </div>
-
-        <div class="hero-right">
-          <div class="avatar" aria-hidden="true">
-            <svg viewBox="0 0 200 200" class="avatar-svg" role="img" aria-label="Natnael avatar placeholder">
-              <defs>
-                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#0fe1d6"/>
-                  <stop offset="100%" stop-color="#ffc857"/>
-                </linearGradient>
-              </defs>
-              <circle cx="100" cy="100" r="90" fill="url(#g1)" opacity="0.12"></circle>
-              <g transform="translate(30,30)">
-                <circle cx="70" cy="40" r="38" fill="#0b0f12" stroke="rgba(255,255,255,0.04)"></circle>
-                <rect x="6" y="96" width="128" height="18" rx="8" fill="rgba(255,255,255,0.03)"></rect>
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section projects">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-sub">Personal and university projects. Built while learning and experimenting.</p>
-
-        <div class="grid cards">
-          <article class="card reveal">
-            <div class="card-head">
-              <h3>Course Registration Portal (UI)</h3>
-              <div class="tags"><span>Web</span><span>Design</span></div>
-            </div>
-            <p class="card-body">A responsive front-end prototype for a university course registration flow — clean forms and accessibility-focused interactions.</p>
-            <div class="card-actions">
-              <button class="btn-sm">Preview</button>
-              <button class="btn-link">Learn More</button>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-head">
-              <h3>Algorithm Practice Tracker</h3>
-              <div class="tags"><span>Learning Projects</span><span>C++</span></div>
-            </div>
-            <p class="card-body">Simple CLI app to track solved problems and topics; helped me build consistent problem-solving habits.</p>
-            <div class="card-actions">
-              <button class="btn-sm">Preview</button>
-              <button class="btn-link">Learn More</button>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-head">
-              <h3>Automation: File Organizer</h3>
-              <div class="tags"><span>Automation</span><span>Tools</span></div>
-            </div>
-            <p class="card-body">Small script to sort files into folders by type — saved time and introduced scripting patterns.</p>
-            <div class="card-actions">
-              <button class="btn-sm">Preview</button>
-              <button class="btn-link">Learn More</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div class="container about-grid">
-        <div class="about-left reveal">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-sub">Hi, I’m Natnael — a first-year Computer Science student at Wolaita Sodo University. I’m passionate about technology, continuous learning, and exploring how computers shape the future.</p>
-
-          <p>I enjoy quiet walks, exploring new places, and Ethiopian street food (especially ertev).</p>
-          <p class="values">Driven by curiosity and guided by faith.</p>
-
-          <div class="what-learning">
-            <h4>What I’m Learning</h4>
-            <div class="skills">
-              <span class="skill">HTML</span>
-              <span class="skill">CSS</span>
-              <span class="skill">C++</span>
-              <span class="skill">Algorithms</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-right reveal">
-          <div class="portrait">
-            <img src="portrait.jpg" alt="Portrait of Natnael Aklilu" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BLOG -->
-    <section id="blog" class="section blog">
-      <div class="container">
-        <h2 class="section-title">Blog & Thoughts</h2>
-        <p class="section-sub">Short reflections and early lessons.</p>
-
-        <div class="grid posts">
-          <article class="post reveal">
-            <h3>My First Year in CS</h3>
-            <time datetime="2025-02-10">Feb 10, 2025</time>
-            <p>What I learned in my initial months — finding curiosity, mentors, and small projects that matter.</p>
-            <a class="btn-link" href="#">Read More</a>
-          </article>
-
-          <article class="post reveal">
-            <h3>How I Started Coding</h3>
-            <time datetime="2024-11-01">Nov 1, 2024</time>
-            <p>A short note about first programs, resources I used, and the joy of seeing things work.</p>
-            <a class="btn-link" href="#">Read More</a>
-          </article>
-
-          <article class="post reveal">
-            <h3>What University Taught Me Beyond Classes</h3>
-            <time datetime="2025-06-15">Jun 15, 2025</time>
-            <p>Thoughts on teamwork, responsibility, and small habits that compound.</p>
-            <a class="btn-link" href="#">Read More</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="container contact-grid">
-        <div class="contact-left reveal">
-          <h2 class="section-title">Contact</h2>
-          <p class="section-sub">Let’s connect — whether it’s a project idea, a question, or just to say hi.</p>
-
-          
-          <ul class="contact-list">
-            <li>
-              <a class="icon contact-icon" href="mailto:natnaelaklilu617@gmail.com" aria-label="Send email to Natnael (opens mail client)">
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a class="icon contact-icon" href="https://instagram.com/nattify_x" target="_blank" rel="noopener" aria-label="Open Instagram profile (opens in new tab)">
-                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a class="icon contact-icon" href="https://t.me/nattify_x" target="_blank" rel="noopener" aria-label="Open Telegram profile (opens in new tab)">
-                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natnael Aklilu | Modern CS Portfolio</title>
     
-    </section>
+    <link rel="icon" href="logo.png" type="image/png"> 
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=sw-ap" rel="stylesheet">
+    
+    <style>
+        /* Base Styling & Modern Dark Theme */
+        html {
+            scroll-behavior: smooth;
+        }
 
-  </main>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505; /* Ultra deep space black */
+            color: #f0f0f0; /* Crisp light text */
+            transition: background-color 0.4s ease;
+            overflow-x: hidden; 
+        }
 
-  <!-- Back to top -->
-  <button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+        /* Custom scrollbar for a sleek look */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: #111; } 
+        body::-webkit-scrollbar-thumb { background-color: #06b6d4; border-radius: 4px; } /* Cyan for modern accent */
+        body::-webkit-scrollbar-thumb:hover { background-color: #22d3ee; } 
+        
+        /* New: Background Canvas for Animation */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Keep it behind all content */
+            pointer-events: none; /* Ignore mouse events */
+        }
+        
+        /* Accent Colors - Electric Teal/Cyan & Vibrant Orange */
+        .accent-cyan { color: #06b6d4; } /* Tailwind Cyan-500 */
+        .accent-orange { color: #f97316; } /* Tailwind Orange-500 */
+        
+        /* Typing Cursor Blink Animation */
+        .blinking-cursor {
+            font-weight: 400; 
+            opacity: 1;
+            animation: cursor-blink 0.8s infinite;
+            transition: opacity 0.3s;
+        }
+        @keyframes cursor-blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <p class="quote">“Small steps, strong direction.”</p>
-        <p class="copyright">© 2025 Natnael Aklilu | Designed with purpose.</p>
-      </div>
-      <div class="footer-right social">
-        <a href="https://instagram.com/nattify_x" target="_blank" rel="noopener" class="icon" aria-label="Open Instagram profile (opens in new tab)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://t.me/nattify_x" target="_blank" rel="noopener" class="icon" aria-label="Open Telegram profile (opens in new tab)"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
-        <a href="mailto:natnaelaklilu617@gmail.com" class="icon" aria-label="Send email to Natnael (opens mail client)"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
-      </div>
+        /* Section Title - Modern Separator */
+        .section-title-underline {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+        .section-title-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%; /* Start narrow */
+            height: 3px;
+            background-color: #06b6d4; 
+            transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth cubic transition */
+        }
+        .section-title-underline:hover::after {
+            width: 100%;
+            background-color: #f97316; /* Change color on hover for high contrast */
+        }
+
+        /* Card Hover Effect for smooth interactivity */
+        .modern-card {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .modern-card:hover {
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3), 0 0 10px rgba(6, 182, 212, 0.2) inset;
+            transform: translateY(-5px);
+            border-color: #06b6d4;
+        }
+        
+        /* Link style for YouVersion */
+        .bible-link {
+            text-decoration: underline;
+            color: #f97316;
+            font-weight: 600; /* Make it a bit bolder */
+        }
+        .bible-link:hover {
+            color: #ffaa6e;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Background Canvas for subtle particle animation --><canvas id="bg-canvas"></canvas>
+
+    <!-- Sticky Header Navigation --><header class="sticky top-0 z-50 bg-gray-950/70 backdrop-blur-md shadow-2xl border-b border-gray-800/50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            
+            <a href="#home" class="flex items-center space-x-3 text-2xl font-extrabold tracking-wide text-white hover:text-cyan-400 transition duration-300">
+                <div class="w-8 h-8 bg-gray-800 rounded-full border-2 border-orange-500 flex items-center justify-center">
+                    <img src="logo.png" alt="N.A. Icon" class="w-full h-full p-1 rounded-full">
+                </div>
+                <span class="accent-cyan">N.</span> Aklilu
+            </a>
+            
+            <!-- Navigation Links --><div class="flex space-x-4 text-sm font-semibold">
+                <a href="#home" class="nav-link text-gray-400 hover:text-cyan-400 transition duration-200">Home</a>
+                <a href="#about" class="nav-link text-gray-400 hover:text-cyan-400 transition duration-200 hidden sm:inline">About</a>
+                <a href="#projects" class="nav-link text-gray-400 hover:text-cyan-400 transition duration-200">Projects</a>
+                <a href="#faith" class="nav-link text-gray-400 hover:text-cyan-400 transition duration-200 hidden md:inline">Faith & Purpose</a>
+                <a href="#connect" class="nav-link bg-orange-600 hover:bg-orange-700 text-white px-3 py-1 rounded-full transition duration-300 shadow-lg shadow-orange-500/40">Connect</a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Home Section: Hero/Intro --><section id="home" class="page-content flex items-center justify-center text-center min-h-screen">
+            <div class="z-10 max-w-4xl space-y-6">
+                
+                <div class="mx-auto w-40 h-40 bg-gray-900 rounded-full flex items-center justify-center mb-6 border-4 border-cyan-500/70 shadow-2xl shadow-cyan-900/50 overflow-hidden">
+                    <img src="portrait.jpg" alt="Natnael Aklilu Portrait" class="object-cover w-full h-full">
+                </div>
+                <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight text-white">
+                    Hello, I'm <span class="accent-orange">Natnael</span>.
+                </h1>
+                <p class="text-2xl sm:text-4xl font-light text-gray-300 h-10">
+                    <span id="typewriter-text" class="h-full"></span><span class="blinking-cursor">|</span>
+                </p>
+                <p class="text-lg max-w-2xl mx-auto text-gray-400 pt-4 leading-relaxed">
+                    A first-year CS student from Wolayta Sodo, Ethiopia. My focus is on **deep algorithms**, Python's future in **AI/NLP**, and building technology guided by integrity. Let's create something meaningful and impactful together.
+                </p>
+                
+                <!-- Action Buttons --><div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 pt-8">
+                    <a href="#projects" class="inline-flex items-center justify-center space-x-2 px-8 py-3 text-lg font-semibold rounded-full bg-cyan-600 hover:bg-cyan-700 transition duration-300 shadow-xl shadow-cyan-500/50 transform hover:-translate-y-1 hover:shadow-cyan-400/60">
+                        <span>Code & Projects</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </a>
+                    <a href="#gallery" id="gallery-link" class="inline-flex items-center justify-center space-x-2 px-8 py-3 text-lg font-semibold rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition duration-300 shadow-xl shadow-orange-500/40 transform hover:-translate-y-1 hover:shadow-orange-400/50">
+                        <span>View My Vibe</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section --><section id="about" class="page-content py-20">
+            <h2 class="text-4xl font-extrabold mb-10 text-white section-title-underline">About <span class="accent-orange">My Drive</span></h2>
+            <div class="space-y-6 text-gray-300 leading-relaxed max-w-4xl">
+                <p>My journey into technology began with a deep curiosity—the desire not just to use tools, but to understand the **mechanics and mathematical logic** behind them. As a dedicated first-year Computer Science student, I am currently focused on mastering the foundational elements of the discipline, including deep dives into C++ for systems programming, and Python for rapid prototyping and exploring **AI/NLP**. I find particular elegance in designing efficient **algorithms and data structures**.</p>
+                <p>Hailing from **Wolayta Sodo, Ethiopia**, my cultural context inspires me to seek technological solutions that are relevant and accessible. Beyond the technical focus, I am grounded by my **Christian faith**. This commitment shapes my perspective on building technology responsibly and ethically, fostering a spirit of diligence, humility, and service in my work. I want to build technology that is honest, reliable, and meaningful in the sight of God, my Creator.</p>
+                <p>When I step away from the code editor, I find balance and reflection in simple pleasures: quiet walks, time for reflection, and exploring the local scenery and culture. I particularly enjoy Ethiopian street food like **ertev**, which reminds me that the simplest ingredients often yield the richest experiences. I believe that effective technology must be built with both **precision and human perspective**.</p>
+                <p class="pt-4 text-xs italic text-gray-500 cursor-pointer hover:text-cyan-400 transition" id="easter-egg-link">
+                    A good foundation is key to reliable systems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section --><section id="projects" class="page-content py-20">
+            <h2 class="text-4xl font-extrabold mb-10 text-white section-title-underline">Projects & <span class="accent-cyan">Experiments</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1: C++ Algorithm Visualizer --><div class="p-7 rounded-2xl bg-gray-900 border border-gray-800 modern-card">
+                    <h3 class="text-2xl font-bold accent-cyan mb-3">C++ Algorithm Visualizer</h3>
+                    <p class="text-gray-400 mb-5 leading-relaxed">A command-line application in C++ developed as a university assignment to clearly illustrate the inner workings of fundamental sorting and searching algorithms (like Merge Sort and Binary Search) using step-by-step console output. This project significantly deepened my understanding of time complexity and efficient memory management in C++.</p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-5">
+                        <span class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-lg">C++</span>
+                        <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-lg">Algorithms</span>
+                        <span class="bg-orange-900/40 text-orange-300 px-3 py-1 rounded-lg">Console App</span>
+                    </div>
+                    <!-- Link --><a href="https://github.com/natnael-aklilu/cpp-algorithms" target="_blank" class="text-orange-500 hover:text-orange-400 font-semibold text-sm inline-flex items-center space-x-1 transition duration-200">
+                        <span>View Source Code</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    </a>
+                </div>
+
+                <!-- Project 2: TailwindCSS Component Lab --><div class="p-7 rounded-2xl bg-gray-900 border border-gray-800 modern-card">
+                    <h3 class="text-2xl font-bold accent-cyan mb-3">TailwindCSS Component Lab</h3>
+                    <p class="text-gray-400 mb-5 leading-relaxed">An ongoing personal repository where I design and implement various reusable, mobile-first UI components using pure HTML and Tailwind CSS. The goal is to maximize design flexibility and prototyping speed, focusing on accessibility and modern dark-mode aesthetics, similar to the portfolio you are currently viewing.</p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-5">
+                        <span class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-lg">HTML</span>
+                        <span class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-lg">Tailwind CSS</span>
+                        <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-lg">UI/UX</span>
+                    </div>
+                    <!-- Link --><a href="https://natnael-aklilu.github.io/tailwind-lab" target="_blank" class="text-orange-500 hover:text-orange-400 font-semibold text-sm inline-flex items-center space-x-1 transition duration-200">
+                        <span>Live Preview</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    </a>
+                </div>
+
+                <!-- Project 3: Simple Text Analyzer --><div class="p-7 rounded-2xl bg-gray-900 border border-gray-800 modern-card">
+                    <h3 class="text-2xl font-bold accent-cyan mb-3">Simple Text Analyzer</h3>
+                    <p class="text-gray-400 mb-5 leading-relaxed">A small Python script utilizing basic **Natural Language Processing (NLP)** techniques to analyze input text. It calculates word frequency, identifies common phrases, and attempts rudimentary sentiment scoring. This project serves as my introductory step toward larger AI and machine learning explorations, particularly focused on handling non-English language data.</p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-5">
+                        <span class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-lg">Python</span>
+                        <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-lg">NLP</span>
+                        <span class="bg-orange-900/40 text-orange-300 px-3 py-1 rounded-lg">AI Foundations</span>
+                    </div>
+                    <!-- Link --><a href="https://github.com/natnael-aklilu/text-analyzer/casestudy.md" target="_blank" class="text-orange-500 hover:text-orange-400 font-semibold text-sm inline-flex items-center space-x-1 transition duration-200">
+                        <span>Read Case Study</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Faith & Purpose Section (REDESIGNED FOR MODERN, SMOOTH FLOW) --><section id="faith" class="page-content py-20">
+            <h2 class="text-4xl font-extrabold mb-10 text-white section-title-underline">My Foundation: <span class="accent-orange">Christ & Purpose</span></h2>
+            <div class="relative p-7 md:p-12 rounded-2xl bg-gradient-to-br from-gray-900 to-black border border-gray-800 modern-card overflow-hidden">
+                
+                <!-- Background subtle pattern/gradient overlay for modern feel --><div class="absolute inset-0 opacity-10 bg-[radial-gradient(#06b6d4_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
+                
+                <div class="relative z-10 text-center space-y-6">
+                    <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+                        My journey in Computer Science is inextricably linked with my faith in **Jesus Christ**. I consider my intellect and skills to be gifts from God, compelling me to approach every line of code, every algorithm, and every project with a profound sense of **diligence and integrity**.
+                    </p>
+                    
+                    <blockquote class="italic text-2xl md:text-3xl font-light text-white leading-snug">
+                        "Whatever you do, do your work heartily, <br class="hidden sm:inline">as for the Lord rather than for men,"
+                    </blockquote>
+                    <p class="text-xl md:text-2xl font-semibold text-orange-500 mb-6">
+                        <a href="https://www.bible.com/bible/2692/COL.3.23.NASB" target="_blank" class="bible-link hover:text-orange-400 transition">
+                            — Colossians 3:23 (NASB)
+                        </a>
+                    </p>
+
+                    <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto pt-4">
+                        This verse is my **ultimate framework** for ethical technology. It guides my pursuit of projects that genuinely benefit humanity and reflect Christian values of **humility, service, and purpose**. My aspiration isn't just professional success, but to craft solutions that are honest, reliable, and deeply meaningful in the sight of my Creator. It's about building with a higher calling.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section --><section id="gallery" class="page-content py-20">
+            <h2 class="text-4xl font-extrabold mb-10 text-white section-title-underline">The <span class="accent-orange">Gallery</span>: Moments & Thoughts</h2>
+            <p class="text-gray-400 mb-8 leading-relaxed max-w-2xl mx-auto text-center">A minimalist grid of moments, inspirations, and cultural snippets that fuel my curiosity and drive. These are visual notes on life outside the code editor.</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Gallery Item 1 --><div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-lg border border-gray-800 modern-card transform hover:scale-105" onclick="openModal('https://placehold.co/800x800/0f172a/06b6d4?text=WOLAYTA+SODO+NIGHT')">
+                    <img class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100" src="https://placehold.co/400x400/0f172a/06b6d4?text=WOLAYTA+SODO+NIGHT" alt="Wolayta Sodo Night view">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-sm font-semibold">Quiet Walks in Wolayta Sodo</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 --><div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-lg border border-gray-800 modern-card transform hover:scale-105" onclick="openModal('https://placehold.co/800x800/0f172a/f97316?text=ERTEV+STREET+FOOD')">
+                    <img class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100" src="https://placehold.co/400x400/0f172a/f97316?text=ERTEV+STREET+FOOD" alt="Ethiopian Street Food (Ertev)">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-sm font-semibold">Street Food (Ertev) Delight</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 --><div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-lg border border-gray-800 modern-card transform hover:scale-105" onclick="openModal('https://placehold.co/800x800/0f172a/06b6d4?text=CS+ALGORITHMS')">
+                    <img class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100" src="https://placehold.co/400x400/0f172a/06b6d4?text=CS+ALGORITHMS" alt="Computer Science Algorithms illustration">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-sm font-semibold">The Elegance of Algorithms</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 --><div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-lg border border-gray-800 modern-card transform hover:scale-105" onclick="openModal('https://placehold.co/800x800/0f172a/f97316?text=REFLECTING+ON+FAITH')">
+                    <img class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100" src="https://placehold.co/400x400/0f172a/f97316?text=REFLECTING+ON+FAITH" alt="Reflecting on Faith and Purpose">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-sm font-semibold">Guidance through Faith</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 --><div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-lg border border-gray-800 modern-card transform hover:scale-105" onclick="openModal('https://placehold.co/800x800/0f172a/06b6d4?text=AI+LANGUAGE+MODEL')">
+                    <img class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100" src="https://placehold.co/400x400/0f172a/06b6d4?text=AI+LANGUAGE+MODEL" alt="AI Language Model visualization">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-sm font-semibold">Vision for NLP</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 --><div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-lg border border-gray-800 modern-card transform hover:scale-105" onclick="openModal('https://placehold.co/800x800/0f172a/f97316?text=CRYPTOCURRENCY+DEFI')">
+                    <img class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 opacity-80 group-hover:opacity-100" src="https://placehold.co/400x400/0f172a/f97316?text=CRYPTOCURRENCY+DEFI" alt="Cryptocurrency and DeFi illustration">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-sm font-semibold">Blockchain Logic</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-gray-600 italic mt-12">Click on an image to enlarge it.</p>
+        </section>
+
+
+        <!-- Connect Section --><section id="connect" class="page-content py-20">
+            <h2 class="text-4xl font-extrabold mb-10 text-white section-title-underline">Get <span class="accent-orange">In Touch</span></h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- Contact Info --><div class="space-y-6 p-8 rounded-2xl bg-gray-900 border border-gray-800 modern-card">
+                    <h3 class="text-2xl font-bold accent-cyan mb-4">Find Me Online</h3>
+                    
+                    <div class="flex flex-col space-y-5">
+                        
+                        <!-- Email --><a href="mailto:natnael.aklilu@example.com" class="flex items-center space-x-4 text-gray-300 hover:text-orange-500 transition duration-300 transform hover:scale-[1.02] group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-cyan-400 group-hover:text-orange-500 transition duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <span class="text-lg font-medium">natnael.aklilu[at]example.com</span>
+                        </a>
+                        
+                        <!-- Twitter/X --><a href="#" target="_blank" class="flex items-center space-x-4 text-gray-300 hover:text-orange-500 transition duration-300 transform hover:scale-[1.02] group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-cyan-400 group-hover:text-orange-500 transition duration-300" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3 5.5l-13.8 5.4-1.2 5.2 6.5-1.9 6.5 4.5 1.5-2.2-7.5-5.5 11-4.7z"/></svg>
+                            <span class="text-lg font-medium">@NatnaelAkliluCS</span>
+                        </a>
+                        
+                        <!-- Instagram (Placeholder for general social link) --><a href="#" target="_blank" class="flex items-center space-x-4 text-gray-300 hover:text-orange-500 transition duration-300 transform hover:scale-[1.02] group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-cyan-400 group-hover:text-orange-500 transition duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"/></svg>
+                            <span class="text-lg font-medium">@natnael_cs_eth</span>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <!-- Contact Form --><div class="space-y-4">
+                    <h3 class="text-2xl font-bold accent-orange mb-4">Send a Quick Message</h3>
+                    <form class="space-y-5 p-8 rounded-2xl bg-gray-900 border border-gray-800 modern-card">
+                        <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200">
+                        <input type="email" placeholder="Your Email" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200">
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200"></textarea>
+                        <button type="submit" class="w-full py-3 font-bold rounded-lg bg-orange-600 hover:bg-orange-700 transition duration-300 text-white shadow-lg shadow-orange-500/50 transform hover:-translate-y-0.5">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    
+    <!-- Footer --><footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600 border-t border-gray-800/50 mt-16">
+        &copy; 2025 Natnael Aklilu. Built with curiosity and code.
+    </footer>
+
+    <!-- Image Modal (Lightbox) --><div id="image-modal" class="fixed inset-0 bg-black bg-opacity-95 z-[100] flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none" onclick="closeModal()">
+        <div class="max-w-5xl max-h-full" onclick="event.stopPropagation()">
+            <img id="modal-image" src="" alt="Enlarged gallery item" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl border-4 border-cyan-500/50">
+            <button class="absolute top-4 right-4 text-white text-4xl font-light opacity-70 hover:opacity-100 transition" onclick="closeModal()">
+                &times;
+            </button>
+        </div>
     </div>
-  </footer>
 
-  <script src="script.js" defer></script>
+
+    <!-- JavaScript for Interactivity and Effects --><script>
+        // --- Navigation Logic: Ensures Gallery is visible upon scroll to it ---
+        const gallerySection = document.getElementById('gallery');
+        const galleryLink = document.getElementById('gallery-link');
+        const easterEggLink = document.getElementById('easter-egg-link');
+
+        function showAndScrollToGallery(e) {
+            e.preventDefault();
+            if (gallerySection) {
+                gallerySection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        if (galleryLink) {
+            galleryLink.addEventListener('click', showAndScrollToGallery);
+        }
+        if (easterEggLink) {
+            easterEggLink.addEventListener('click', showAndScrollToGallery);
+        }
+
+        // --- Typing Effect Logic for Home Section ---
+        const typewriterText = document.getElementById('typewriter-text');
+        const phrases = ["a Computer Science Student.", "Learning C++ and Python.", "Building ethical technology.", "Seeking Truth."];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            if (!typewriterText) return; 
+            
+            const currentPhrase = phrases[phraseIndex];
+            const cursor = document.querySelector('.blinking-cursor');
+
+            if (isDeleting) {
+                typewriterText.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                cursor.style.opacity = '1';
+            } else {
+                typewriterText.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                cursor.style.opacity = '1';
+            }
+
+            let typeSpeed = isDeleting ? 50 : 120; // Faster delete/type speed for a snappier feel
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                // Done typing the phrase, pause, then start deleting
+                typeSpeed = 2200; // Slightly longer pause
+                isDeleting = true;
+                cursor.style.opacity = '0';
+            } else if (isDeleting && charIndex === 0) {
+                // Done deleting, move to next phrase
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 400;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        // --- Gallery Modal Logic (Lightbox) ---
+        const modal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        
+        function openModal(imageSrc) {
+            modalImage.src = imageSrc;
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100');
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modal.classList.remove('opacity-100');
+        }
+
+        // --- PARTICLE FIELD ANIMATION LOGIC (The cool vibe!) ---
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const maxParticles = 50; 
+        const linkDistance = 150;
+        const particleColor = 'rgba(6, 182, 212, 0.5)'; // Subtle Cyan
+        const linkColor = 'rgba(6, 182, 212, 0.1)'; 
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor(x, y) {
+                this.x = x || Math.random() * canvas.width;
+                this.y = y || Math.random() * canvas.height;
+                this.radius = Math.random() * 1.5 + 0.5; // Small particles
+                this.speedX = (Math.random() - 0.5) * 0.3; // Very slow horizontal drift
+                this.speedY = (Math.random() - 0.5) * 0.3; // Very slow vertical drift
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                // Wrap around edges
+                if (this.x < 0) this.x = canvas.width;
+                if (this.x > canvas.width) this.x = 0;
+                if (this.y < 0) this.y = canvas.height;
+                if (this.y > canvas.height) this.y = 0;
+            }
+
+            draw() {
+                ctx.fillStyle = particleColor;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < maxParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function linkParticles() {
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a; b < particles.length; b++) {
+                    const dx = particles[a].x - particles[b].x;
+                    const dy = particles[a].y - particles[b].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < linkDistance) {
+                        ctx.strokeStyle = linkColor;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            // Clear canvas while maintaining transparency
+            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+
+            linkParticles();
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Start all crucial scripts immediately after the document structure is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            resizeCanvas();
+            initParticles();
+            animate();
+            type(); // Start typing effect
+        });
+    </script>
 </body>
 </html>
