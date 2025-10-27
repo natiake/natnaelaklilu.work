@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Natnael Aklilu — Computer Science Student</title>
+  <meta name="description" content="Natnael Aklilu — First-Year Computer Science student at Wolaita Sodo University. Learning. Building. Growing." />
+  <meta name="author" content="Natnael Aklilu" />
+  <meta name="theme-color" content="#0b0f12" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Natnael Aklilu — Computer Science Student" />
+  <meta property="og:description" content="Learning. Building. Growing. — First-year CS student at Wolaita Sodo University." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="natnaelaklilu.work" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (Free CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO canonical -->
+  <link rel="canonical" href="https://natnaelaklilu.work/">
+
+</head>
+<body>
+  <!-- Particle background canvas -->
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">Natnael Aklilu</div>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1 class="title">Natnael Aklilu <span class="muted">| Computer Science Student</span></h1>
+          <p class="subtitle"><span id="typing"></span></p>
+          <div class="hero-cta">
+            <button id="view-work" class="btn-primary">View My Work</button>
+            <a class="btn-ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <ul class="learning-list" aria-hidden="true">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">C++</li>
+            <li class="chip">Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="avatar" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="avatar-svg" role="img" aria-label="Natnael avatar placeholder">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#0fe1d6"/>
+                  <stop offset="100%" stop-color="#ffc857"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="100" r="90" fill="url(#g1)" opacity="0.12"></circle>
+              <g transform="translate(30,30)">
+                <circle cx="70" cy="40" r="38" fill="#0b0f12" stroke="rgba(255,255,255,0.04)"></circle>
+                <rect x="6" y="96" width="128" height="18" rx="8" fill="rgba(255,255,255,0.03)"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">Personal and university projects. Built while learning and experimenting.</p>
+
+        <div class="grid cards">
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Course Registration Portal (UI)</h3>
+              <div class="tags"><span>Web</span><span>Design</span></div>
+            </div>
+            <p class="card-body">A responsive front-end prototype for a university course registration flow — clean forms and accessibility-focused interactions.</p>
+            <div class="card-actions">
+              <button class="btn-sm">Preview</button>
+              <button class="btn-link">Learn More</button>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Algorithm Practice Tracker</h3>
+              <div class="tags"><span>Learning Projects</span><span>C++</span></div>
+            </div>
+            <p class="card-body">Simple CLI app to track solved problems and topics; helped me build consistent problem-solving habits.</p>
+            <div class="card-actions">
+              <button class="btn-sm">Preview</button>
+              <button class="btn-link">Learn More</button>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Automation: File Organizer</h3>
+              <div class="tags"><span>Automation</span><span>Tools</span></div>
+            </div>
+            <p class="card-body">Small script to sort files into folders by type — saved time and introduced scripting patterns.</p>
+            <div class="card-actions">
+              <button class="btn-sm">Preview</button>
+              <button class="btn-link">Learn More</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-left reveal">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-sub">Hi, I’m Natnael — a first-year Computer Science student at Wolaita Sodo University. I’m passionate about technology, continuous learning, and exploring how computers shape the future.</p>
+
+          <p>I enjoy quiet walks, exploring new places, and Ethiopian street food (especially ertev).</p>
+          <p class="values">Driven by curiosity and guided by faith.</p>
+
+          <div class="what-learning">
+            <h4>What I’m Learning</h4>
+            <div class="skills">
+              <span class="skill">HTML</span>
+              <span class="skill">CSS</span>
+              <span class="skill">C++</span>
+              <span class="skill">Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal">
+          <div class="portrait">
+            <img src="portrait.jpg" alt="Portrait of Natnael Aklilu" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section blog">
+      <div class="container">
+        <h2 class="section-title">Blog & Thoughts</h2>
+        <p class="section-sub">Short reflections and early lessons.</p>
+
+        <div class="grid posts">
+          <article class="post reveal">
+            <h3>My First Year in CS</h3>
+            <time datetime="2025-02-10">Feb 10, 2025</time>
+            <p>What I learned in my initial months — finding curiosity, mentors, and small projects that matter.</p>
+            <a class="btn-link" href="#">Read More</a>
+          </article>
+
+          <article class="post reveal">
+            <h3>How I Started Coding</h3>
+            <time datetime="2024-11-01">Nov 1, 2024</time>
+            <p>A short note about first programs, resources I used, and the joy of seeing things work.</p>
+            <a class="btn-link" href="#">Read More</a>
+          </article>
+
+          <article class="post reveal">
+            <h3>What University Taught Me Beyond Classes</h3>
+            <time datetime="2025-06-15">Jun 15, 2025</time>
+            <p>Thoughts on teamwork, responsibility, and small habits that compound.</p>
+            <a class="btn-link" href="#">Read More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-sub">Let’s connect — whether it’s a project idea, a question, or just to say hi.</p>
+
+          
+          <ul class="contact-list">
+            <li>
+              <a class="icon contact-icon" href="mailto:natnaelaklilu617@gmail.com" aria-label="Send email to Natnael (opens mail client)">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icon contact-icon" href="https://instagram.com/nattify_x" target="_blank" rel="noopener" aria-label="Open Instagram profile (opens in new tab)">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icon contact-icon" href="https://t.me/nattify_x" target="_blank" rel="noopener" aria-label="Open Telegram profile (opens in new tab)">
+                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+       
+    
+    </section>
+
+  </main>
+
+  <!-- Back to top -->
+  <button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="quote">“Small steps, strong direction.”</p>
+        <p class="copyright">© 2025 Natnael Aklilu | Designed with purpose.</p>
+      </div>
+      <div class="footer-right social">
+        <a href="https://instagram.com/nattify_x" target="_blank" rel="noopener" class="icon" aria-label="Open Instagram profile (opens in new tab)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://t.me/nattify_x" target="_blank" rel="noopener" class="icon" aria-label="Open Telegram profile (opens in new tab)"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+        <a href="mailto:natnaelaklilu617@gmail.com" class="icon" aria-label="Send email to Natnael (opens mail client)"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
