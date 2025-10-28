@@ -304,7 +304,7 @@
                     <h3 class="text-2xl font-bold accent-cyan mb-4">Find Me Online</h3>
                     
                   
-    <div class="flex flex-col space-y-5">
+<div class="flex flex-col space-y-5">
     
 
     <!-- Telegram (icon only) -->
@@ -324,19 +324,19 @@
             <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
         </svg>
     </a>
-    </div>
+</div>
 
                     
                 </div>
 
                 <!-- Contact Form --><div class="space-y-4">
                     <h3 class="text-2xl font-bold accent-orange mb-4">Send a Quick Message</h3>
-                    <form id="contact-form" class="space-y-5 p-8 rounded-2xl bg-gray-900 border border-gray-800 modern-card" novalidate>
-    <input id="sender-name" name="senderName" type="text" placeholder="Your Name" required class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200">
-    <input id="sender-email" name="senderEmail" type="email" placeholder="Your Email (optional)" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200">
-    <textarea id="sender-message" name="senderMessage" placeholder="Your Message" rows="5" required class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200"></textarea>
-    <button type="submit" class="w-full py-3 font-bold rounded-lg bg-orange-600 hover:bg-orange-700 transition duration-300 text-white shadow-lg shadow-orange-500/50 transform hover:-translate-y-0.5">
-        Send Message
+                    <form class="space-y-5 p-8 rounded-2xl bg-gray-900 border border-gray-800 modern-card">
+                        <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200">
+                        <input type="email" placeholder="Your Email" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200">
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-gray-100 placeholder-gray-400 transition duration-200"></textarea>
+                        <button type="submit" class="w-full py-3 font-bold rounded-lg bg-orange-600 hover:bg-orange-700 transition duration-300 text-white shadow-lg shadow-orange-500/50 transform hover:-translate-y-0.5">
+                            Send Message
                         </button>
                     </form>
                 </div>
@@ -434,41 +434,6 @@
             modal.classList.add('opacity-0', 'pointer-events-none');
             modal.classList.remove('opacity-100');
         }
-        
-            // ...existing code...
-<script>
-    
-
-    // Contact form -> open user's mail client with prefilled email
-    (function(){
-        const form = document.getElementById('contact-form');
-        if (!form) return;
-        form.addEventListener('submit', function(e){
-            e.preventDefault();
-            const name = document.getElementById('sender-name').value.trim();
-            const senderEmail = document.getElementById('sender-email').value.trim();
-            const message = document.getElementById('sender-message').value.trim();
-
-            if (!name || !message) {
-                alert('Please provide your name and a message.');
-                return;
-            }
-
-            const recipient = 'natnaelaklilu617@gmail.com';
-            const subject = encodeURIComponent(`Website message from ${name}`);
-            const body = encodeURIComponent(`Name: ${name}\nEmail: ${senderEmail || 'Not provided'}\n\n${message}`);
-
-            // Open default mail client
-            window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-
-            // Optional: reset form after opening mail client
-            form.reset();
-        });
-    })();
-
-    
-</script>
-// ...existing code...
 
         // --- PARTICLE FIELD ANIMATION LOGIC (The cool vibe!) ---
         const canvas = document.getElementById('bg-canvas');
