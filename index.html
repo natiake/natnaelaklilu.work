@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natnael Aklilu </title>
+    <title>Natnael Aklilu</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,12 +11,12 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-     <link rel="icon" href="Icon.png">
-
-
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
+    <link rel="icon" href="Icon.png">
+
+
     <script>
       tailwind.config = {
         theme: {
@@ -40,12 +40,6 @@
               'spin-slow': 'spin 15s linear infinite',
               'float': 'float 6s ease-in-out infinite',
             },
-            keyframes: {
-              float: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-10px)' },
-              }
-            }
           }
         }
       }
@@ -99,21 +93,11 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         }
         
-        /* Utility for hiding elements */
         .hidden-custom {
             display: none !important;
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+
 </head>
 <body>
     <!-- Scanlines Overlay -->
@@ -138,7 +122,7 @@
                </div>
                <div class="flex flex-col">
                  <span class="text-white font-display font-bold tracking-wider text-lg">NATNAEL</span>
-                 <span class="text-[10px] text-gray-500 font-mono tracking-[0.2em]">AKLILU</span>
+                 <span class="text-[10px] text-gray-500 font-mono tracking-[0.3em]">AKLILU</span>
                </div>
             </a>
 
@@ -193,7 +177,7 @@
             <div class="z-10 text-center max-w-5xl mx-auto relative">
                 <!-- Professional Portrait -->
                 <div class="relative w-40 h-40 md:w-48 md:h-48 mx-auto mb-10">
-                    <div class="w-full h-full rounded-full overflow-hidden border-4 border-gray-900 shadow-2xl relative z-10">
+                    <div class="w-full h-full rounded-full overflow-hidden border-4 border-gray-900 shadow-2xl relative z-10 bg-gray-800">
                         <img src="portrait.jpg" alt="Natnael Aklilu" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                     </div>
                     <!-- Subtle Glow behind -->
@@ -257,7 +241,7 @@
                         My goal is to evolve into an entrepreneur who creates real impact in Ethiopia's tech landscape. I don't just use technology; I seek to understand it deeply to solve complex problems. And also I'm trying to enter new industries to Ethiopia through scholarships to be able to learn more and contribute effectively.
                     </p>
                     <div class="pt-6 border-t border-white/10">
-                        <p className="text-md font-mono text-neon-blue italic">
+                        <p class="text-md font-mono text-neon-blue italic">
                         "My background keeps me humble, my curiosity keeps me moving, and my faith keeps me grounded."
                         </p>
                     </div>
@@ -554,69 +538,37 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-24 relative overflow-hidden">
-            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16 relative z-10 items-center">
-                <!-- Left: Info -->
-                <div class="space-y-10">
-                    <div>
-                        <h2 class="text-4xl md:text-6xl font-display font-bold text-white mb-6">
-                            Get in <span class="text-neon-blue">Touch</span>
-                        </h2>
-                        <p class="font-sans text-gray-300 text-xl leading-relaxed">
-                            I am available for freelance projects, consultation, to be good friends and collaborations. Let's build something great together.
-                        </p>
-                    </div>
-
-                    <!-- Simplified Social Links - Functional Icons -->
-                    <div class="flex items-center gap-6">
-                        <!-- EMAIL LINK -->
-                        <a href="mailto:natnaelaklilu617@gmail.com" class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-neon-blue hover:border-neon-blue hover:text-black hover:scale-110 active:scale-95 transition-all duration-300 group shadow-lg shadow-black/50" title="Send Email">
-                            <i data-lucide="mail" class="w-7 h-7"></i>
-                        </a>
-
-                        <!-- TELEGRAM LINK -->
-                        <a href="https://t.me/nattify_x" target="_blank" rel="noreferrer" class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-[#229ED9] hover:border-[#229ED9] hover:text-white hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-black/50" title="Open Telegram">
-                            <i data-lucide="external-link" class="w-7 h-7"></i>
-                        </a>
-                    </div>
-
-                    <!-- Map Visualization -->
-                    <div class="relative h-64 w-full bg-gray-900/50 border border-white/10 rounded-lg overflow-hidden group shadow-2xl">
-                        <div class="absolute inset-0 bg-[radial-gradient(#444_1px,transparent_1px)] bg-[size:20px_20px] opacity-20"></div>
-                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                            <div class="w-3 h-3 bg-neon-blue rounded-full shadow-[0_0_15px_#00f3ff] animate-pulse relative z-10"></div>
-                            <div class="w-12 h-12 bg-neon-blue/20 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-ping"></div>
-                            <div class="mt-4 bg-black/80 px-3 py-1 rounded border border-gray-700 text-xs font-mono text-white backdrop-blur-sm">
-                                Ethiopia
-                            </div>
-                        </div>
-                        <div class="absolute bottom-3 right-3 text-[10px] font-mono text-gray-400 flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-3 h-3"></i> GPS Coordinates Active
-                        </div>
-                    </div>
+            <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+                <div class="mb-12">
+                    <h2 class="text-4xl md:text-6xl font-display font-bold text-white mb-6">
+                        Get in <span class="text-neon-blue">Touch</span>
+                    </h2>
+                    <p class="font-sans text-gray-300 text-xl leading-relaxed max-w-2xl mx-auto">
+                        I am available for freelance projects, consultation, to be good friends and collaborations. Let's build something great together.
+                    </p>
                 </div>
 
-                <!-- Right: Form -->
-                <div class="glass-panel p-8 md:p-10 rounded-sm">
-                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                        <div class="space-y-2">
-                            <label class="text-sm font-bold text-gray-400 uppercase font-sans tracking-wider">Name</label>
-                            <input type="text" class="w-full bg-black/50 border border-gray-700 p-4 text-white focus:outline-none focus:border-neon-blue focus:bg-black/80 transition-all rounded-sm placeholder-gray-600" placeholder="Your Name">
-                        </div>
+                <!-- Simplified Social Links - Only Icons -->
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <!-- EMAIL LINK -->
+                    <a href="mailto:natnaelaklilu617@gmail.com" class="w-20 h-20 flex items-center justify-center rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-neon-blue hover:border-neon-blue hover:text-black hover:scale-110 active:scale-95 transition-all duration-300 group shadow-lg shadow-black/50" title="Email Me">
+                        <i data-lucide="mail" class="w-8 h-8"></i>
+                    </a>
 
-                        <div class="space-y-2">
-                            <label class="text-sm font-bold text-gray-400 uppercase font-sans tracking-wider">Email</label>
-                            <input type="email" class="w-full bg-black/50 border border-gray-700 p-4 text-white focus:outline-none focus:border-neon-blue focus:bg-black/80 transition-all rounded-sm placeholder-gray-600" placeholder="your@email.com">
-                        </div>
+                    <!-- INSTAGRAM LINK -->
+                    <a href="https://instagram.com/nattify_x" target="_blank" rel="noreferrer" class="w-20 h-20 flex items-center justify-center rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-pink-600 hover:border-pink-600 hover:text-white hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-black/50" title="Instagram">
+                        <i data-lucide="instagram" class="w-8 h-8"></i>
+                    </a>
 
-                        <div class="space-y-2">
-                            <label class="text-sm font-bold text-gray-400 uppercase font-sans tracking-wider">Message</label>
-                            <textarea rows="4" class="w-full bg-black/50 border border-gray-700 p-4 text-white focus:outline-none focus:border-neon-blue focus:bg-black/80 transition-all rounded-sm resize-none placeholder-gray-600" placeholder="How can I help you?"></textarea>
-                        </div>
-
-                        <button class="w-full py-4 bg-white text-black font-sans font-bold uppercase tracking-wider hover:bg-neon-blue hover:scale-[1.02] active:scale-95 transition-all duration-300 rounded-sm flex items-center justify-center gap-2 shadow-lg shadow-white/5 hover:shadow-neon-blue/20 cursor-pointer">
-                            Send Message <i data-lucide="send" class="w-4 h-4"></i>
-                        </button>
-                    </form>
+                    <!-- TELEGRAM LINK -->
+                    <a href="https://t.me/nattify_x" target="_blank" rel="noreferrer" class="w-20 h-20 flex items-center justify-center rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-[#229ED9] hover:border-[#229ED9] hover:text-white hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-black/50" title="Telegram">
+                        <i data-lucide="send" class="w-8 h-8"></i>
+                    </a>
+                    
+                    <!-- GITHUB LINK -->
+                    <a href="https://github.com/natiake" target="_blank" rel="noreferrer" class="w-20 h-20 flex items-center justify-center rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-white hover:border-white hover:text-black hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg shadow-black/50" title="GitHub">
+                        <i data-lucide="github" class="w-8 h-8"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -792,6 +744,5 @@
         animate();
 
     </script>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
